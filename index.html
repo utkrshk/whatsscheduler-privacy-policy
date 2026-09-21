@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>-</title>
+  <title>Privacy Policy — Scheduler Pro</title>
   <style>
     html {
       color: #1a1a1a;
@@ -169,38 +169,50 @@
   </style>
 </head>
 <body>
-<h1 id="privacy-policy-whatsscheduler-pro">Privacy Policy —
-WhatsScheduler Pro</h1>
-<p><strong>Effective date:</strong> <strong>7 August 2026</strong>
-<strong>Last updated:</strong> <strong>7 August 2026</strong></p>
+<h1 id="privacy-policy-scheduler-pro">Privacy Policy — Scheduler
+Pro</h1>
+<p><strong>Effective date:</strong> <strong>21 September 2026</strong>
+<strong>Last updated:</strong> <strong>21 September 2026</strong></p>
+<p><em>This app was previously published as <strong>WhatsScheduler
+Pro</strong>. It is the same app, package name
+<code>com.whatsscheduler.pro</code>, and this policy replaces the version
+dated 7 August 2026. The substantive changes are the new §6
+(advertising) and §7 (Google account and Drive backup), and the rewritten
+§5 — please read those even if you have read this policy before.</em></p>
 <hr />
 <h2 id="the-short-version">1. The short version</h2>
-<p>WhatsScheduler Pro is designed so that your data never needs to leave
-your phone.</p>
+<p>Scheduler Pro is built so that what you write, who you write it to,
+and what you attach never leaves your phone.</p>
 <ul>
-<li>There is <strong>no account</strong> and <strong>no
-sign-up</strong>.</li>
-<li>We operate <strong>no servers</strong>. There is nowhere for us to
-send your data, and we could not read it if we wanted to.</li>
-<li>We collect <strong>no analytics and no telemetry</strong> — not
-usage statistics, not crash reports, not an advertising identifier.</li>
+<li>There is <strong>no account and no sign-up</strong> to use the app.
+You can sign in to Google if — and only if — you want the optional Drive
+backup (§7).</li>
+<li>We operate <strong>no servers of our own</strong>. There is nowhere
+for us to send your data, and we could not read it if we wanted to.</li>
+<li>We collect <strong>no analytics and no telemetry</strong> — no usage
+statistics, no crash reports, no event logs.</li>
 <li>Your scheduled messages, contacts, attachments, auto-reply rules and
 settings are stored <strong>in this app’s private storage on your
-device</strong> — and, like any Android app’s data, may be included in
-<strong>your own</strong> Android backup to <strong>your own</strong>
-Google account. See §3, which explains exactly what is and is not
-covered by that.</li>
-<li>The app makes <strong>exactly one kind of outbound network
-request</strong>, and only if you switch on AI replies: to the AI
-provider <em>you</em> choose, using the API key <em>you</em> supply.
-With AI replies off, the app makes no network requests at all.</li>
+device</strong>.</li>
+<li><strong>The app shows ads.</strong> They are served by Google AdMob,
+and to choose an ad Google’s Mobile Ads SDK reads your device’s
+<strong>advertising ID</strong>. This is the one part of the app that
+shares anything with a third party for its own purposes, it is described
+in full in §6, and in the EEA and UK you are asked before any of it
+happens.</li>
+<li>The app’s outbound network requests are: to the <strong>AI
+provider</strong> you configure (§5), to <strong>Google’s ad
+servers</strong> (§6), to <strong>Google Drive</strong> if you turn
+backup on (§7), and to your device’s own <strong>speech
+recognizer</strong> if you use voice typing (§11). There are no
+others.</li>
 </ul>
 <p>Everything below is the detail behind those statements.</p>
 <hr />
 <h2 id="who-this-policy-is-from">2. Who this policy is from</h2>
 <p><strong>UTK Apps</strong> (“we”, “us”) publishes the Android
-application <strong>WhatsScheduler Pro</strong> (the “App”), package
-name <code>com.whatsscheduler.pro</code>. This policy covers the App
+application <strong>Scheduler Pro</strong> (the “App”), package name
+<code>com.whatsscheduler.pro</code>. This policy covers the App
 only.</p>
 <hr />
 <h2 id="what-the-app-stores-and-where">3. What the App stores, and
@@ -224,7 +236,7 @@ we have no servers to transmit it to.</p>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Scheduled messages: recipients, message
-text, chosen time, repeat settings</td>
+text, chosen time, repeat and time-zone settings</td>
 <td style="text-align: left;">On-device database</td>
 <td style="text-align: left;">To send them at the time you chose</td>
 </tr>
@@ -248,7 +260,7 @@ reply-once-per-conversation, and AI context if you enable it</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Contacts you select as recipients (name
-and number)</td>
+and number), and your own Custom Groups</td>
 <td style="text-align: left;">On-device database</td>
 <td style="text-align: left;">So a schedule knows who to send to</td>
 </tr>
@@ -257,7 +269,7 @@ and number)</td>
 seen a notification from</td>
 <td style="text-align: left;">On-device database</td>
 <td style="text-align: left;">Groups cannot otherwise be selected — see
-§7</td>
+§9</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">App settings and preferences</td>
@@ -265,19 +277,28 @@ seen a notification from</td>
 <td style="text-align: left;">To remember your choices</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">Your Google account’s email address, name
+and profile-photo URL — <strong>only if you sign in for backup</strong>
+(§7)</td>
+<td style="text-align: left;">On-device preferences</td>
+<td style="text-align: left;">To show you which account backups are
+going to. <strong>No access token is ever stored</strong> — one is
+requested at the moment it is used and discarded.</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Your AI provider API key</td>
 <td style="text-align: left;"><strong>Encrypted</strong>, Android
 Keystore</td>
 <td style="text-align: left;">To authenticate to the provider you
 chose</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Your device PIN — <strong>only if you
 enable auto-unlock</strong></td>
 <td style="text-align: left;"><strong>Encrypted</strong>, Android
 Keystore</td>
 <td style="text-align: left;">To unlock the screen at send time — see
-§8</td>
+§10</td>
 </tr>
 </tbody>
 </table>
@@ -286,14 +307,15 @@ scheduled message, rule or group removes it. Clearing the App’s storage,
 or uninstalling the App, removes all of it. Recorded conversation turns
 are additionally purged automatically after <strong>7 days</strong> by a
 periodic cleanup task, whether you delete anything or not.</p>
-<p><strong>Backup — please read this one.</strong> Two different things
-happen here, and we would rather be precise than reassuring:</p>
+<p><strong>Backup — please read this one.</strong> Three different
+things happen here, and we would rather be precise than reassuring:</p>
 <ul>
 <li><strong>Your two secrets are never backed up.</strong> Your AI
 provider key and your device PIN are explicitly <strong>excluded from
-Android cloud backup and from device-to-device transfer</strong>
-(<code>backup_rules.xml</code>, <code>data_extraction_rules.xml</code>).
-They cannot leave the device even via the system.</li>
+Android cloud backup, from device-to-device transfer, and from the App’s
+own Drive backup</strong> (<code>backup_rules.xml</code>,
+<code>data_extraction_rules.xml</code>). They cannot leave the device
+even via the system.</li>
 <li><strong>The rest of the App’s data participates in Android’s normal
 backup.</strong> The App has Android auto-backup enabled, which means
 your schedules, the recipients you selected, your auto-reply rules and
@@ -304,45 +326,62 @@ href="https://policies.google.com/privacy">Google’s privacy policy</a> —
 it does not come to us, and we cannot read it. If you would rather this
 did not happen, you can turn off backup for this app in your device’s
 backup settings.</li>
+<li><strong>The App’s own Drive backup is separate, and off until you
+switch it on.</strong> It is described in §7.</li>
 </ul>
 <p>We call this out because “nothing leaves your phone” would be a
-tidier sentence than the truth. What is true is that <strong>nothing is
-sent to us</strong>, and that the two things worth protecting most are
-locked to the device.</p>
+tidier sentence than the truth. What is true is that <strong>nothing
+about your messages, recipients or attachments is ever sent to
+us</strong>, and that the two things worth protecting most are locked to
+the device.</p>
 <hr />
 <h2 id="what-we-do-not-collect">4. What we do not collect</h2>
 <p>To be explicit, the App does <strong>not</strong> collect, generate,
 transmit or store any of the following:</p>
 <ul>
-<li>An account, an email address, a username or a password</li>
-<li>Your phone number or your device’s identifiers (no advertising ID,
-no IMEI, no install ID)</li>
+<li>An account, an email address, a username or a password <em>for
+us</em> — we have no accounts. (If you sign in to <em>your own</em>
+Google account for backup, see §7.)</li>
+<li>Your phone number, your IMEI, or an install identifier</li>
 <li>Location data of any kind</li>
 <li>Analytics, usage statistics, event logs, heat maps or session
 recordings</li>
 <li>Crash or diagnostic reports sent to us</li>
 <li>Your WhatsApp credentials — the App never signs in to WhatsApp and
 never sees them</li>
-<li>The contents of your WhatsApp conversations (see §6)</li>
+<li>The contents of your WhatsApp conversations (see §8)</li>
 </ul>
-<p>The App contains <strong>no advertising SDK and no analytics
+<p><strong>One identifier is read, and we will not bury it:</strong> the
+<strong>Android advertising ID</strong>, by Google’s Mobile Ads SDK, in
+order to serve the ads described in §6. We never receive it, and it is
+never joined to anything else in this app. The App contains
+<strong>no analytics SDK, no crash-reporting service and no social
 SDK.</strong></p>
 <hr />
-<h2 id="network-use-the-one-outbound-request">5. Network use — the one
-outbound request</h2>
+<h2 id="network-use">5. Network use, and the AI provider you choose</h2>
 <p>The App requests the <code>INTERNET</code> and
-<code>ACCESS_NETWORK_STATE</code> permissions for two purposes only:</p>
+<code>ACCESS_NETWORK_STATE</code> permissions. The full list of things
+it reaches over the network is:</p>
 <ol type="1">
 <li><strong>Checking whether you are online</strong>, using Android’s
 own connectivity APIs. This is a local question to the operating system;
 it sends nothing anywhere. It exists so a message that comes due with no
 connection is <em>held</em> rather than attempted and failed.</li>
-<li><strong>Reaching the AI provider you configured</strong> — and
-nothing else.</li>
+<li><strong>The AI provider you configured</strong> — described just
+below.</li>
+<li><strong>Google’s ad servers</strong>, for the ads in §6.</li>
+<li><strong>Google Drive</strong>, if and only if you have signed in and
+switched backup on (§7).</li>
+<li><strong>Your device’s own speech recognizer</strong>, if you use
+voice typing (§11) — which may or may not involve the network, as that
+section explains.</li>
 </ol>
+<p>There is nothing else, and in particular <strong>there is no
+call to any server of ours, because we have none.</strong></p>
 <p>If you enable AI auto-replies, then when a rule using AI matches an
 incoming message, the App sends to the provider <strong>you</strong>
-selected:</p>
+selected (OpenAI, Google Gemini, Anthropic, or any OpenAI-compatible
+endpoint you point it at):</p>
 <ul>
 <li>the incoming message text,</li>
 <li>your system prompt,</li>
@@ -356,14 +395,95 @@ provider’s privacy policy and data-retention practices apply, not
 ours</strong> — including whether they retain or train on the content.
 Please read the terms of whichever provider you choose. You are
 responsible for their charges.</p>
-<p>If you never enable AI replies, the App makes no outbound network
-requests at all.</p>
+<p>If you never enable AI replies, no message content is ever sent to
+any AI provider.</p>
 <hr />
-<h2 id="accessibility-service-what-it-does-and-does-not-do">6.
+<h2 id="advertising">6. Advertising</h2>
+<p>The App is free, and it is paid for by ads served by <strong>Google
+AdMob</strong>. There are two kinds, and there are no others:</p>
+<ul>
+<li>a <strong>banner</strong> across the bottom of the Dashboard,
+Schedule, Auto-reply and Settings screens;</li>
+<li>a <strong>full-screen ad</strong>, shown occasionally as you leave a
+screen — after you save a scheduled message or an auto-reply rule, or
+when you open <em>AI provider</em>, <em>Custom Groups</em>,
+<em>Auto-unlock</em> or <em>Backup &amp; restore</em> from Settings. It
+is shown at most once every few minutes, and <strong>never while a
+scheduled message is being sent.</strong></li>
+</ul>
+<p><strong>What is shared.</strong> To select and measure an ad,
+Google’s Mobile Ads SDK reads your device’s <strong>advertising
+ID</strong> and coarse technical information about your device (such as
+device model, operating-system version, language, and coarse
+location inferred from your IP address), and Google may use this to
+personalise ads and to measure their performance. This happens between
+your device and Google. <strong>We do not receive it, and we see nothing
+but an aggregate earnings figure in our own AdMob account.</strong></p>
+<p><strong>What is never shared.</strong> The ad SDK is never given —
+and has no access to — your messages, your recipients, your contacts,
+your attachments, your Custom Groups, your auto-reply rules, your AI API
+key or your device PIN. None of those are sent anywhere except as
+described in §5 and §7.</p>
+<p><strong>If you are in the European Economic Area or the UK</strong>,
+you are asked before any of this happens. Google’s own consent message
+appears the first time you open the App, <strong>no ad is requested
+until you have answered it</strong>, and you can change your answer at
+any time in <strong>Settings → Ad privacy options</strong>.</p>
+<p><strong>Everywhere</strong>, you can reset or delete your advertising
+ID, or opt out of ad personalisation, in your device’s own
+<strong>Settings → Privacy → Ads</strong>. Google’s policy at <a
+href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>
+describes what Google collects when you use apps that use its services,
+and <a href="https://support.google.com/admob/answer/9012903">this AdMob
+page</a> lists the ad technology providers Google may work with.</p>
+<hr />
+<h2 id="google-account-and-drive-backup">7. Google account and Drive
+backup</h2>
+<p>Drive backup is <strong>optional and off by default.</strong> A fresh
+install backs up nothing and is signed in to nothing. You are offered it
+once at the end of first run, and you can say no; you can turn it on or
+off later in <strong>Settings → Backup &amp; restore</strong>.</p>
+<p>If you sign in and switch it on:</p>
+<ul>
+<li>Your <strong>scheduled messages, auto-reply rules and Custom
+Groups</strong> — and, if you choose, <strong>their attachments</strong>
+— are copied to a <strong>hidden, per-app folder in your own Google
+Drive</strong>, on the frequency you pick (Daily, Weekly or
+Monthly).</li>
+<li>That folder is Drive’s <code>appDataFolder</code>: it does not
+appear in your Drive listing, and other apps cannot see it.</li>
+<li><strong>The only permission the App ever asks Google for is
+<code>drive.appdata</code></strong> — the narrowest scope Google offers
+that can store anything. It <strong>cannot read, list, open or modify
+any other file in your Drive</strong>, and we deliberately do not ask
+for one that could.</li>
+<li><strong>The backup never comes to us.</strong> The App talks to
+<code>googleapis.com</code> directly, with a token issued to your own
+account. There is no server of ours in the path.</li>
+<li>Your account’s <strong>email address, name and profile-photo
+URL</strong> are stored on the device so the App can show which account
+is in use. <strong>No access token is stored</strong> — one is requested
+at the moment it is needed and discarded.</li>
+<li><strong>Your AI key and your device PIN are not included in the
+backup</strong>, ever.</li>
+</ul>
+<p><strong>Restoring</strong> merges rather than replaces: nothing
+already on the device is deleted, and an item that has already been
+restored is updated rather than added a second time.</p>
+<p>You can <strong>sign out</strong>, <strong>switch backup off</strong>,
+or <strong>delete the backup</strong> at any time from Settings → Backup
+&amp; restore, and you can revoke the App’s access to your Drive
+entirely at <a
+href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+What is in your Drive is governed by <a
+href="https://policies.google.com/privacy">Google’s privacy
+policy</a>.</p>
+<hr />
+<h2 id="accessibility-service-what-it-does-and-does-not-do">8.
 Accessibility Service — what it does and does not do</h2>
-<p>The App includes an Android Accessibility Service
-(<code>WhatsScheduler Pro — Send action</code>). Android requires us to
-be explicit about it, and we want to be.</p>
+<p>The App includes an Android Accessibility Service (<code>Scheduler
+Pro — Send action</code>). Android requires us to be explicit about it,
+and we want to be.</p>
 <p><strong>What it is used for, and only this:</strong></p>
 <ol type="1">
 <li><strong>Tapping the “Send” button inside WhatsApp.</strong> WhatsApp
@@ -375,7 +495,7 @@ report honestly whether the message went.</li>
 <li><strong>Selecting a group chat</strong> from WhatsApp’s own chat
 picker, when sending to a group.</li>
 <li><strong>Entering a PIN</strong> — only if you have enabled
-auto-unlock (§8). This covers your device’s lock screen and WhatsApp’s
+auto-unlock (§10). This covers your device’s lock screen and WhatsApp’s
 own App Lock prompt.</li>
 </ol>
 <p><strong>What it does not do:</strong></p>
@@ -383,7 +503,7 @@ own App Lock prompt.</li>
 <li>It does <strong>not</strong> read, collect, store, log or transmit
 the contents of your conversations.</li>
 <li>It does <strong>not</strong> send anything about the screens it
-reads to us or to anyone else.</li>
+reads to us, to an advertiser, or to anyone else.</li>
 <li>It reads screen content only while a send you scheduled is actively
 in progress.</li>
 </ul>
@@ -396,7 +516,7 @@ purposes listed above, and you can revoke it at any time in
 <strong>Settings → Accessibility</strong>, at which point the App can no
 longer send anything.</p>
 <hr />
-<h2 id="notification-access-what-auto-reply-reads">7. Notification
+<h2 id="notification-access-what-auto-reply-reads">9. Notification
 access — what auto-reply reads</h2>
 <p>The App includes a Notification Listener Service, used
 <strong>only</strong> if you want auto-replies.</p>
@@ -412,16 +532,17 @@ list of groups, so this is the only way a group becomes selectable.</li>
 <li>That text is processed <strong>on your device</strong>. It is not
 sent anywhere — with one exception you control: if a matching rule uses
 <strong>AI</strong>, the incoming message is sent to your configured AI
-provider so a reply can be generated (§5).</li>
+provider so a reply can be generated (§5). It is never sent to an
+advertiser.</li>
 <li>Replies are delivered through the notification’s own reply action,
-or by the send mechanism in §6.</li>
+or by the send mechanism in §8.</li>
 </ul>
 <p>Auto-reply also depends on WhatsApp being configured to show message
 content in notifications. That is a WhatsApp setting, not ours.</p>
 <p>You can revoke notification access at any time in your system
 notification-access settings.</p>
 <hr />
-<h2 id="your-device-pin-if-you-enable-auto-unlock">8. Your device PIN,
+<h2 id="your-device-pin-if-you-enable-auto-unlock">10. Your device PIN,
 if you enable auto-unlock</h2>
 <p>Auto-unlock is <strong>optional and off by default.</strong> You must
 switch it on and enter your PIN yourself.</p>
@@ -432,9 +553,9 @@ switch it on and enter your PIN yourself.</p>
 Keystore</strong>, so the key protecting it is held by your device’s
 hardware-backed keystore.</li>
 <li>It is <strong>never transmitted anywhere.</strong> Not to us — we
-have no servers — and not to any third party.</li>
-<li>It is <strong>excluded from Android backup and from device-to-device
-transfer</strong> (§3).</li>
+have no servers — and not to any third party, advertiser included.</li>
+<li>It is <strong>excluded from Android backup, from device-to-device
+transfer, and from the App’s Drive backup</strong> (§3, §7).</li>
 <li>It is decrypted only in the moment immediately before a scheduled
 send, to type on the lock screen, and it is used for nothing else.</li>
 <li>You can delete it at any time: <strong>Settings → Auto-unlock →
@@ -449,7 +570,30 @@ scheduled sending on a locked phone is impossible without it. If that
 trade-off is not acceptable to you, leave auto-unlock off — every other
 feature works without it.</p>
 <hr />
-<h2 id="other-permissions">9. Other permissions</h2>
+<h2 id="voice-typing-and-the-microphone">11. Voice typing and the
+microphone</h2>
+<p>Voice typing is optional. When you tap the microphone in the App’s
+own message box, the App uses <strong>Android’s own speech
+recognition</strong> to turn what you say into text in that field.</p>
+<ul>
+<li>The App does not record, save or upload audio. It receives text back
+from the recognizer, puts it in the field you are filling in, and keeps
+nothing of it.</li>
+<li><strong>Where recognition happens is the device’s decision, not
+ours.</strong> If your device has an on-device recognition model, it
+stays on the device — the App asks for on-device recognition where it is
+available. If it does not, Android’s recognizer (usually Google’s) may
+send the audio to its own servers for transcription, exactly as your
+keyboard’s microphone key does. That processing is governed by your
+device or recognizer provider’s privacy policy.</li>
+<li>The microphone is used <strong>only while one of the App’s own
+editors is on screen and you have tapped the microphone.</strong> The
+App has no background listening of any kind.</li>
+<li>If you never tap the microphone, the permission is never requested
+and nothing is recorded.</li>
+</ul>
+<hr />
+<h2 id="other-permissions">12. Other permissions</h2>
 <table style="width:97%;">
 <colgroup>
 <col style="width: 51%" />
@@ -472,7 +616,7 @@ contacts you actually select are stored.</td>
 <td style="text-align: left;"><code>RECORD_AUDIO</code></td>
 <td style="text-align: left;"><strong>Voice typing only.</strong>
 Requested the first time you tap the microphone, never at first run. See
-§10.</td>
+§11.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><code>POST_NOTIFICATIONS</code></td>
@@ -480,7 +624,7 @@ Requested the first time you tap the microphone, never at first run. See
 show the brief notification Android requires while a send runs.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><code>SCHEDULE_EXACT_ALARM</code>
+<td style="text-align: left;"><code>SCHEDULE_EXACT_ALARM</code></td>
 <td style="text-align: left;">To fire a scheduled message at the minute
 you chose.</td>
 </tr>
@@ -490,22 +634,35 @@ you chose.</td>
 so nothing is lost to a reboot.</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"><code>VIBRATE</code></td>
+<td style="text-align: left;">Only for the optional alarm you can attach
+to a message, which rings or vibrates if that message fails to reach
+someone.</td>
+</tr>
+<tr class="odd">
 <td
 style="text-align: left;"><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td>
 <td style="text-align: left;">Optional. So Android’s power saving does
 not delay a send.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><code>SYSTEM_ALERT_WINDOW</code> (“Display
 over other apps”)</td>
 <td style="text-align: left;">So a scheduled send can bring WhatsApp
 forward while the App is in the background, and so Touch Guard can cover
 the screen during a send.</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"><code>FOREGROUND_SERVICE</code></td>
+<tr class="odd">
+<td style="text-align: left;"><code>FOREGROUND_SERVICE</code>,
+<code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
 <td style="text-align: left;">For the short-lived service that carries
 out a single send.</td>
+</tr>
+<tr class="even">
+<td
+style="text-align: left;"><code>com.google.android.gms.permission.AD_ID</code></td>
+<td style="text-align: left;">Added by Google’s Mobile Ads SDK. It is
+how the advertising ID described in §6 is read.</td>
 </tr>
 </tbody>
 </table>
@@ -513,51 +670,50 @@ out a single send.</td>
 and queries the device’s speech recognition service — both required by
 Android’s package-visibility rules in order to function.</p>
 <hr />
-<h2 id="voice-typing-and-the-microphone">10. Voice typing and the
-microphone</h2>
-<p>Voice typing is optional. When you tap the microphone the App uses
-<strong>Android’s own speech recognition</strong> to turn what you say
-into text in the message field.</p>
-<ul>
-<li>The App does not record, save or upload audio. It receives text back
-from the recognizer and puts it in the field.</li>
-<li><strong>Where recognition happens is the device’s decision, not
-ours.</strong> If your device has an on-device recognition model, it
-stays on the device — the App asks for on-device recognition where it is
-available. If it does not, Android’s recognizer (usually Google’s) may
-send the audio to its own servers for transcription, exactly as your
-keyboard’s microphone key does. That processing is governed by your
-device or recognizer provider’s privacy policy.</li>
-<li>If you never tap the microphone, the permission is never requested
-and nothing is recorded.</li>
-</ul>
-<hr />
-<h2 id="children">11. Children</h2>
+<h2 id="children">13. Children</h2>
 <p>The App is not directed at children and should not be used by them.
-It automates another application and can store a device PIN. We do not
-knowingly collect information from anyone — see §4 — and in particular
-not from children.</p>
+It automates another application, can store a device PIN, and shows
+advertising. We do not knowingly collect information from anyone — see
+§4 — and in particular not from children. If you believe a child has
+used the App on your device, clearing the App’s storage removes
+everything it holds.</p>
 <hr />
-<h2 id="third-party-libraries">12. Third-party libraries</h2>
+<h2 id="third-party-libraries-and-services">14. Third-party libraries
+and services</h2>
 <p>The App is built with standard Android and Google open-source
 libraries — AndroidX and Jetpack (Compose, Room, WorkManager, DataStore,
-Security), Dagger Hilt, Kotlin Coroutines, kotlinx. serialization, and
-OkHttp for the AI request in §5.</p>
-<p><strong>None of these collect or transmit your data on their
-own.</strong> They are local libraries, not services. The App integrates
-<strong>no advertising network, no analytics platform, no
-crash-reporting service and no social SDK.</strong></p>
+Security), Dagger Hilt, Kotlin Coroutines, kotlinx.serialization, and
+OkHttp for the requests in §5 and §7. <strong>None of these collect or
+transmit your data on their own.</strong> They are local libraries, not
+services.</p>
+<p>Three Google components <strong>do</strong> talk to Google, and each
+is described above:</p>
+<ul>
+<li>the <strong>Google Mobile Ads SDK</strong> and the <strong>User
+Messaging Platform</strong> consent library — §6;</li>
+<li><strong>Credential Manager</strong> and Google’s authorization
+library, used only to sign you in and obtain a Drive token — §7;</li>
+<li>Android’s own <strong>speech recognition</strong> service — §11.</li>
+</ul>
+<p>The App integrates <strong>no analytics platform, no crash-reporting
+service and no social SDK.</strong></p>
 <p>The App has no affiliation with WhatsApp LLC or Meta Platforms,
-Inc. It interacts with WhatsApp on your device, as you would, using
+Inc. It interacts with WhatsApp on your device, as you would, using
 publicly documented links and Android’s own APIs. Your use of WhatsApp
 remains governed by WhatsApp’s terms and privacy policy.</p>
 <hr />
-<h2 id="your-control-and-how-to-reach-us">13. Your control, and how to
+<h2 id="your-control-and-how-to-reach-us">15. Your control, and how to
 reach us</h2>
 <p><strong>You can, at any time:</strong></p>
 <ul>
 <li>Delete any scheduled message, auto-reply rule or Custom Group inside
 the App.</li>
+<li>Change your ad consent choice (<strong>Settings → Ad privacy
+options</strong>, where it is offered), and reset or delete your
+advertising ID in your device’s own privacy settings.</li>
+<li>Sign out of Google, switch off Drive backup, or delete the backup
+(<strong>Settings → Backup &amp; restore</strong>), and revoke the App’s
+Drive access in your Google account.</li>
 <li>Remove your stored AI key (<strong>Settings → AI provider → Remove
 key</strong>).</li>
 <li>Remove your stored device PIN (<strong>Settings → Auto-unlock →
@@ -570,10 +726,11 @@ uninstalling it.</li>
 </ul>
 <p>Because we hold no data about you, there is nothing for us to export
 or erase on request — a data access or deletion request is satisfied
-entirely by the actions above, on your own device. If you are in a
-jurisdiction granting you such rights (GDPR, UK GDPR, CCPA and similar),
-this is the substance of our answer: we are not a controller or
-processor of your personal data, because we never receive it.</p>
+entirely by the actions above, on your own device, and by the Google
+controls linked in §6 and §7 for the data those services hold. If you
+are in a jurisdiction granting you such rights (GDPR, UK GDPR, CCPA and
+similar), this is the substance of our answer: we are not a controller
+or processor of your personal data, because we never receive it.</p>
 <p><strong>Contact</strong></p>
 <ul>
 <li>Email: utkapps.dev@gmail.com</li>
@@ -581,11 +738,11 @@ processor of your personal data, because we never receive it.</p>
 </ul>
 <p>We aim to respond within <strong>5 business days</strong>.</p>
 <hr />
-<h2 id="changes-to-this-policy">14. Changes to this policy</h2>
+<h2 id="changes-to-this-policy">16. Changes to this policy</h2>
 <p>If this policy changes we will update the <em>Last updated</em> date
 above and publish the new version at the same URL. Material changes — in
-particular any change to §4, §5 or §12 — will also be noted in the app’s
-release notes, because those three sections are the ones a user has
+particular any change to §4, §5, §6, §7 or §14 — will also be noted in
+the app’s release notes, because those are the sections a user has
 relied on.</p>
 <hr />
 </body>
